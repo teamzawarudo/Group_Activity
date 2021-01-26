@@ -17,9 +17,14 @@ use App\Http\Controllers\Homecontroller;
 // Route::get('/index', function () {
 //     return view('index');
 // });
-
+//laravel controller
 Route::get('/index', [Homecontroller::class,'index']);
 
 Route::get('/generic', [Homecontroller::class,'generic']);
 
 Route::get('/elements', [Homecontroller::class,'elements']);
+
+//laravel request
+Route::get('/regformindex', [Homecontroller::class,'regformindex']);
+
+Route::post('/display', [Homecontroller::class,'display']);
